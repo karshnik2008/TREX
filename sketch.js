@@ -101,7 +101,7 @@ function draw() {
     obstaclesGroup.setLifetimeEach(-1);
     cloudsGroup.setLifetimeEach(-1);
     if(mousePressedOver (restart)) {
-       reset();
+       end();
        }
     }
 
@@ -163,7 +163,7 @@ function spawnObstacles() {
   }
 }
 
-function reset () {
+function end () {
   gameState=PLAY;
   gameOver.visible=false;
   restart.visible=false;
